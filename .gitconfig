@@ -1,0 +1,8 @@
+[credential]
+	helper = cache
+[credential "https://github.com"]
+	opheophagus = hayakiri
+	username = andela-badebiyi
+[user]
+	name = Adebiyi Bodunde
+	email = bodunde.adebiyi@andela.com

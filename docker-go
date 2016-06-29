@@ -1,0 +1,14 @@
+FROM golang:1.6.2
+
+RUN mkdir -p /go/src/github.com/andela/micro-user-management-service
+
+ADD . /go/src/github.com/andela/micro-user-management-service
+
+WORKDIR /go/src/github.com/andela/micro-user-management-service
+
+RUN go get github.com/tools/godep
+RUN godep restore
+
+ENTRYPOINT ["go", "run", "main.go"]
+
+EXPOSE 50050
